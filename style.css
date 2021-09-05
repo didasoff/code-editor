@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-header {
+    background-color: black;
+    height: 50px;
+}
+
+.main-header button {
+    height: 30px;
+    width: 120px;
+    border: none;
+    background-color: #323232;
+    color: white;
+    cursor: pointer;
+    margin: 10px 0px 10px 10px;
+}
+
+.main-header button:hover {
+    background-color: #1f1f1f;
+}
+
+.main-header button i {
+    padding-right: 8px;
+}
+
+.all-div {
+    height: 600px;
+}
+
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column:first-child {
+    flex: 2;
+    border-right: 10px solid black;
+}
+
+.column:last-child {
+    flex: 1;
+}
+
+.CodeMirror {
+    height: 200px !important;
+}
+
+.show-code {
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: white;
+}
+
+.html-code,
+.css-code,
+.js-code {
+    border-top: 2px solid #1f1f1f;
+    overflow: hidden;
+}
+
+.html-code p,
+.css-code p,
+.js-code p {
+    background-color: #323232;
+    color: rgb(202, 202, 202);
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    width: fit-content;
+    padding: 5px 20px;
+    border-top: 3px solid #1f1f1f;
+}
+
+.html-code p i {
+    color: #e34c26;
+    padding-right: 5px;
+}
+
+.css-code p i {
+    color: #264de4;
+    padding-right: 5px;
+}
+
+.js-code p i {
+    color: #f0db4f;
+    padding-right: 5px;
+}
+
+.CodeMirror {
+    background: #323232 !important;
+}
+
+@media (max-width: 680px) {
+    .main-header {
+        height: fit-content;
+    }
+    .main-header button {
+        display: block;
+        margin: 10px auto;
+    }
+    .column:first-child {
+        flex-basis: 100%;
+        border-right: none;
+    }
+}
