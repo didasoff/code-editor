@@ -69,11 +69,14 @@ body {
     background-color: white;
 }
 
+.editror {
+    overflow: hidden;
+}
+
 .html-code,
 .css-code,
 .js-code {
     border-top: 2px solid #1f1f1f;
-    overflow: hidden;
 }
 
 .html-code p,
